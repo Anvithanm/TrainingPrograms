@@ -1,0 +1,11 @@
+import pexcept
+child=pexcept.spawn(python dbmail.py)
+child.expect('gmail')
+child.sendline('')
+child.except('password')
+child.sendline('')
+child.except('to')
+child.sendline('')
+child.except('sub')
+child.sendline('')
+child.close()

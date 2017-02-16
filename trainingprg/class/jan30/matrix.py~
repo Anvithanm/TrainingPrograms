@@ -1,0 +1,40 @@
+class Matrix:
+	def __init__(self,array):
+		self.array=array
+	def __add__(self,other):
+		if len(self.array) == len(other.array):
+			row_len1=self.array[0]
+			row_len2=other.array[1]
+			for row in self.array:
+				if row_len1 !=len(row):
+					return none
+			for row in other.array:
+				if row_len2 != len(row):
+					return none
+		newmatrix =[]
+		for i in range(self.array):
+			row=[]
+			for j in range(self.array[0]):
+				row.append(self.array[i][j]+other.array[i][j])
+				newmatrix.append(row) 
+
+		return matrix(newmatrix)
+num_row = input()
+num_column = input()
+mat=[]
+#a=matrix(num_row)
+#b=matrix(num_column)
+#print a+b
+
+for i in range(num_row):
+	row=[]
+	for j in range(num_column):
+		cell=input()
+		row.append(cell)
+		mat.append(row)
+m1=Matrix(mat)
+m2=Matrix(mat)
+m3=matrix(mat)
+print m1 + m2
+#print mat[0]
+#print m1+m2

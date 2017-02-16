@@ -1,0 +1,95 @@
+--------------------------> 2nd largest element------------>
+
+lis=[]
+n=int(input("enter the range\n"))#10
+
+for n in range(n):
+	n=int(input("enter the no"))
+	lis.append(n)
+print lis
+
+print max(lis)
+
+lis.remove(max(lis))
+sm=max(lis)
+print sm
+ 
+
+---------------------------->calculator----------------->
+
+n1=int(input("enter 1st the no"))
+ch=raw_input("enther the symbol")
+n2=int(input("enter the 2nd no"))
+n3=0
+
+if ch=='+':
+	 n3=n1+n2
+	 print n3
+elif ch=='-':
+	 n3=n1-n2
+	 print n3
+elif ch=='*':
+	 n3=n1*n2
+	 print n3
+elif ch=='/':
+	 n3=n1/n2
+	 print n3
+
+
+-------------------------> prime no -------------->
+import mymodule
+import sys
+import random
+import time
+L=[]
+x=int(sys.argv[1])
+while True:
+	R=random.randint(1,1000)
+	P=mymodule.testprime(R)
+	if P: L.append(R)
+	if len(L) == x: break
+
+print L
+d={}
+for x in L:
+	if not d.has_key(x):
+		d[x]=1
+	else:
+		d[x]=d[x]+1
+for k in d.keys():
+	print k,':',d[k]
+t=time.clock()
+print t
+
+
+f = open('tes.txt', 'w')
+s = str(L)
+f.write(s)
+f.close()
+
+
+
+---------------> pattern-------------->		
+
+str='*'
+m=1
+n=int(input("enter the no of times u need *\n"))
+for m in range(n):
+	print str*m
+
+
+-------------------> end of string---------------->	
+lis=[]
+while True:
+	inp=raw_input("enter the string\n")
+	lis.append(inp)
+	if inp=="end":
+	 break
+        
+print lis       
+
+------------------> 
+
+
+
+

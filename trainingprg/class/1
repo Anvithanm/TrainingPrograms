@@ -1,0 +1,8 @@
+class variable:
+	def_init_(self,a):
+		self.a=a
+		print "object created"
+	def_str_(self):
+		return self a
+print self.a
+	
